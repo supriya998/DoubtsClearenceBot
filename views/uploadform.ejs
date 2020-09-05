@@ -1,0 +1,42 @@
+<%- include('header'); %>
+<br><br><br>
+<!DOCTYPE html>
+<html>
+    <head>
+    <style type="text/css">
+        div {
+            position: absolute;
+            top: 350px;
+            left: 600px;
+            font-family: 'Lora', serif;
+        }
+        h4{
+          position: absolute;
+          left:50px;
+        }
+        .heading{
+          position: absolute;
+          left: -50px;
+        }
+        .btn{
+          position: absolute;
+          left:150px;
+        }
+    </style>
+    </head>
+    <body>
+      <div>
+        <form action="/upload" method=post enctype="multipart/form-data">
+          <h2 class="heading">Upload Students Counsellers Mapping</h2><br><br><br>
+          <a href = '/download1'><h4>Download Sample CSV File.</h4></a><br><br><br>
+            <b><i><big><center>Enter file name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <input type="file" name="inputfile">
+              <br><br>
+            <input type="submit" class="btn btn-primary" value="Upload">
+        </form>
+      </center>
+      </div>
+    </body>
+</html> 
+
